@@ -1,0 +1,83 @@
+#sign-in{
+  background-image: url('nature.jpg');
+ 
+  height:100vh;
+}
+
+.well{
+
+ position: absolute;
+ top: 0px;
+ left: 34%;
+ height: 100vh;
+ background:linear-gradient(135deg,rgba(57,68,75,.85) 0,rgba(57,68,75,.85) 100%);
+
+}
+.content-wrapper{
+  color: aliceblue;
+  position: relative;
+  top: 20%;
+
+
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.sidenav{
+  height: 100vh;
+  background: #5d6e73;
+  color: white;
+}
+
+
+
+.intro-section{
+  position: relative;
+  top: 10%;
+  
+}
+
+.menu-section{
+  position: relative;
+  top: 20%;
+  
+}
+
+.nav > li > a{
+  font-weight: 600;
+  padding: 20px 0px;
+  color: white;
+
+}
+.nav-pills > li.active >a{
+  background:#337ab7;
+font-weight: 600;
+  padding: 20px 0px;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
