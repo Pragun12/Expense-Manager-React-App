@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import jwt from "jsonwebtoken";
 import axios from 'axios';
 import config from '../config';
+import setAuthorizationToken from './utils/setAuthorizationToken';
+import setCurrentUser from './utils/setCurrentUser';
 
 class Login extends Component {
 
@@ -36,11 +38,15 @@ class Login extends Component {
          username:response.data[0].email
        },config.jwtSecret
       );
-       console.log(token);
+       localStorage.setItem('jwtToken',token);
+       setAuthorizationToken(token);
+       setCurrentUser(localStorage.getItem('jwtToken'));
+
+       window.location.href='/dashboard';
         
       })
       .catch(function (error) {
-        //console.log(error);
+        
       });
 
       
@@ -99,7 +105,7 @@ class Login extends Component {
       
       <div id="sign-in" >
       <div className="container row">
-      <div className="col-sm-4 well">
+      <div className="col-sm-4 well login-box">
       <div className="content-wrapper">
       <h3>Expense Manager</h3>
           <form onSubmit={this.handleSubmit.bind(this)}>

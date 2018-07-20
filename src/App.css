@@ -4,7 +4,7 @@
   height:100vh;
 }
 
-.well{
+.login-box{
 
  position: absolute;
  top: 0px;
@@ -48,6 +48,7 @@
   height: 100vh;
   background: #5d6e73;
   color: white;
+  z-index: 99;
 }
 
 
@@ -75,8 +76,55 @@
 font-weight: 600;
   padding: 20px 0px;
 }
+.main-content{
+  padding-left: 0px;
+  padding-right: 0px;
+  
+}
+.page-header{
+  height: 72px;
+  padding: 20px;
+  box-sizing:border-box;
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+  line-height: 30px;
+ margin: 0px;
+ position: fixed;
+ width: 100%;
+}
 
+.page-header h1{
+  float: left;
+  color: #5d6e73;
+  font-size: 24.192px;
+  margin-left: 20px;
+  
+}
+.content{
+  
+  top: 90px;
+}
+.center{
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top:150px;
+  
+}
+.modal-title{
+ text-align: left;
+ font-weight: 700;
+}
 
+.show-expense-header{
+  padding-bottom: 15px;
+  text-align: left;
+  border-bottom:#eee 2px solid;
+}
+
+.expense-grid{
+  padding: 20px;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
