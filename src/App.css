@@ -125,6 +125,12 @@ font-weight: 600;
 .expense-grid{
   padding: 20px;
 }
+
+.delete-btn{
+  float: right;
+  color: red;
+  font-weight: 800;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

@@ -56,13 +56,14 @@ class ModalBox extends Component {
         formData.append('file',this.state.file);
         formData.append('comment',this.state.comment);
   
-        axios.post('http://localhost:3200/api/expense',formData,{ 
+       
+      axios.post('http://localhost:3200/api/expense',formData,{ 
           headers: {
           'Content-Type': 'multipart/form-data'
           }
       })
         .then(function (response) {
-          window.location.href='/expense';
+        //  window.location.href='/expense';
          
         });
       }

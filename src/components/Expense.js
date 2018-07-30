@@ -24,9 +24,6 @@ class Expense extends Component {
       showExpenseView:!this.state.showExpenseView
     })
 
-  
-      
-   
   }
 
    
